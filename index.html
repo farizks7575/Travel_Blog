@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #ffffff;">
+  
+    <!-- nav -->
+    <div class="menu-bar">
+      <h1 class="logo"></i> TravelBlog</h1><i class="fas fa-globe"></i>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="./blog.html">Blog</a>
+        </li>
+        <li><a href="#">Destination <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">India</a></li>
+                  <li><a href="#">Japan</a></li>
+                  <li><a href="#">USA</a></li>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">France</a></li>
+                </ul>
+              </div>
+        </li>
+        <li><a href="#">Travel <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Travel Tips</a></li>
+                <li><a href="#">Budget Travel</a></li>
+              </ul>
+            </div>
+      </li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  <!-- Hero Section -->
+  <div class="background">
+    <video autoplay muted loop id="background-video">
+      <source src="https://videos.pexels.com/video-files/4125025/4125025-uhd_2560_1440_24fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <section id="home" class="hero">
+      <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;   font-size: 75px; text-align: center ;">  Explore the World with Our Travel Guides</h2>
+    </section>
+  </div>
+  
+<br>
+<!-- Search Box HTML -->
+<div class="search-container">
+    <div class="search-input-container">
+        <i class="fa fa-search search-icon"></i> <!-- FontAwesome search icon -->
+        <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <button class="search-button">Search</button>
+</div>
+<br><br>
+
+<!-- About Section -->
+<section class="about">
+    <div class="about-content">
+        <h1>About Me</h1><br>
+        <p>Hi, I’m [Your Name], a passionate traveler who loves to explore new places and share amazing stories. Through my travel blog, I aim to inspire others to travel the world and experience the beauty of different cultures. From hidden gems to popular destinations, I cover everything that makes traveling a rewarding experience.
+
+            Join me on this adventure as I document my journey across continents, bringing you tips, guides, and travel hacks to make your next trip unforgettable. Whether you're a seasoned traveler or just starting out, my blog offers something for everyone—from budget-friendly itineraries to luxury escapes, off-the-beaten-path wonders, and local culinary delights. Let's embark on this exciting journey together and discover the world one destination at a time!</p>
+    </div>
+    <div class="about-image">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/11/16/man-1869135_1280.jpg" alt="Travel Blogger Image">
+    </div>
+   
+</section>
+<br>
+
+<!-- Popular Destinations -->
+<section id="destinations" class="destinations py-5">
+    <div class="container">
+        <h1 style="font-size: 50px;   font-family: Playfair Display ;" class="text-center mb-4">Popular Destinations</h1><br><br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="custom-card">
+                <img src="https://images.pexels.com/photos/27928635/pexels-photo-27928635/free-photo-of-viaje-a-fira-santorini.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Santorini, Greece">
+                <div class="custom-card-body">
+                  <h5 class="custom-card-title">Santorini, Greece</h5>
+                  <p class="custom-card-text">Explore the stunning views and rich history of Santorini.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+          </div>
+        
+          <div class="col-md-3">
+            <div class="custom-card">
+                <img src="https://images.pexels.com/photos/27500575/pexels-photo-27500575/free-photo-of-templos-en-japon.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Kyoto, Japan">
+                <div class="custom-card-body">
+                  <h5 class="custom-card-title">Kyoto, Japan</h5>
+                  <p class="custom-card-text">Discover the serene temples and beautiful gardens of Kyoto.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="custom-card">
+                <img src="https://cdn.pixabay.com/photo/2013/11/13/12/27/mountains-209956_1280.jpg" class="card-img-top" alt="Maui, Hawaii">
+                <div class="custom-card-body">
+                  <h5 class="custom-card-title">Maui, Hawaii</h5>
+                  <p class="custom-card-text">Experience the breathtaking beaches and landscapes of Maui.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="custom-card">
+                <img src="https://cdn.pixabay.com/photo/2020/05/17/12/56/rome-5181486_1280.jpg" class="card-img-top" alt="Rome, Italy">
+                <div class="custom-card-body">
+                  <h5 class="custom-card-title">Rome, Italy</h5>
+                  <p class="custom-card-text">Immerse yourself in the rich history and culture of Rome.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- icon -->
+<div class="featured-section">
+    <h1 style="font-size: 60px;   font-family: Playfair Display">Featured</h1>
+    <br><br>
+    <div class="featured-logos">
+      <img src="./USA-Today-logo.png" alt="USA Today">
+     
+      <img src="./time-magazine-black7136.logowik.com.webp" alt="NBC News">
+      <img src="./NBC_News_(2023).svg" alt="NBC News">
+      <img src="./bbc_travel_logo-april_03_2023.png" alt="BBC Travel">
+      <img src="./download-removebg-preview.png" alt="BBC Travel">
+    </div>
+  </div>
+  <br><br>
+
+<!-- travel destinations -->
+<h1 style="font-size: 50px;   font-family: Playfair Display">Travel Destinations</h1><br><br>
+<div class="destination-container">
+    <div class="destination">
+        <img src="https://cdn.pixabay.com/photo/2022/01/09/09/37/charminar-6925637_1280.jpg" alt="Paris">
+        <div class="info">
+            <h2>INDIA</h2>
+            
+        </div>
+    </div>
+    <div class="destination">
+        <img src="https://cdn.pixabay.com/photo/2019/07/13/16/44/woman-4335235_1280.jpg" alt="Tokyo">
+        <div class="info">
+       <h2>JAPAN</h2>
+        </div>
+    </div>
+    <div class="destination">
+        <img src="https://cdn.pixabay.com/photo/2020/07/19/19/10/statue-of-liberty-5421081_1280.jpg" alt="New York">
+        <div class="info">
+            <h2>USA</h2>
+        </div>
+    </div>
+    <div class="destination">
+        <img src="https://cdn.pixabay.com/photo/2016/02/05/04/49/australia-1180394_1280.jpg" alt="Sydney">
+        <div class="info">
+            <h2>AUSTRALIA</h2>
+        </div>
+    </div>
+    <div class="destination">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/11/05/architecture-1838626_1280.jpg" alt="Cape Town">
+        <div class="info">
+            <h2>FRANCE</h2>
+        </div>
+    </div>
+</div>
+
+<!--/trip  -->
+<!-- Budget Travel Section -->
+<section id="budget-travel" class="budget-travel py-5">
+    <div class="trip">
+        <h1 style="font-size: 60px;   font-family: Playfair Display" class="text-center mb-4">Budget Travel Tips & Destinations</h1><br>
+        <p class="text-center">Travel the world without breaking the bank! Here are our top tips for budget-friendly travel, and destinations that offer incredible experiences for less.</p>
+        
+        <div class="row">
+            <!-- Tip 1 -->
+            <div class="col-md-4">
+                <div class="trip-card">
+                    <i class="fas fa-plane-departure fa-3x"></i>
+                    <h5 class="trip-card-title">Book Flights Early</h5>
+                    <p>One of the easiest ways to save on travel is by booking your flights in advance. Use flight comparison tools to find the best deals and set up price alerts for your preferred destinations.</p>
+                </div>
+            </div>
+            
+            <!-- Tip 2 -->
+            <div class="col-md-4">
+                <div class="trip-card">
+                    <i class="fas fa-bed fa-3x"></i>
+                    <h5 class="trip-card-title">Choose Affordable Accommodations</h5>
+                    <p>Instead of staying in expensive hotels, consider hostels, guesthouses, or even Airbnb rentals. These options are often more affordable and provide a unique, local experience.</p>
+                </div>
+            </div>
+            
+            <!-- Tip 3 -->
+            <div class="col-md-4">
+                <div class="trip-card">
+                    <i class="fas fa-utensils fa-3x"></i>
+                    <h5 class="trip-card-title">Eat Like a Local</h5>
+                    <p>Avoid touristy restaurants and opt for street food or local eateries. Not only will you save money, but you’ll also enjoy authentic, delicious meals that reflect the region's culture.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Budget-Friendly Destinations -->
+        <h1 style="font-size: 50px;   font-family: Playfair Display" class="text-center mt-5">Top Budget Destinations</h1>
+        <br><br>
+        <div class="row">
+            <!-- Destination 1 -->
+            <div class="col-md-4">
+                <div class="trip-card">
+                    <img src="https://cdn.pixabay.com/photo/2023/09/25/20/34/lisbon-8275988_1280.jpg" class="card-img-top" alt="Lisbon, Portugal">
+                    <div class="trip-card-body">
+                        <h5 class="trip-card-title">Lisbon, Portugal</h5>
+                        <p>Lisbon offers affordable accommodation, cheap eats, and stunning sights. It’s a perfect destination for budget-conscious travelers.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination 2 -->
+            <div class="col-md-4">
+                <div class="trip-card">
+                    <img src="https://cdn.pixabay.com/photo/2019/02/06/16/39/tet-3979500_1280.jpg" class="card-img-top" alt="Hanoi, Vietnam">
+                    <div class="trip-card-body">
+                        <h5 class="trip-card-title">Hanoi, Vietnam</h5>
+                        <p>Hanoi is known for its rich history, vibrant street food, and inexpensive accommodations. Explore Vietnam on a budget while experiencing incredible culture.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination 3 -->
+            <div class="col-md-4">
+                <div class="trip-card">
+                    <img src="https://cdn.pixabay.com/photo/2021/02/03/17/36/river-5978743_1280.jpg" class="card-img-top" alt="Budapest, Hungary">
+                    <div class="trip-card-body">
+                        <h5 class="trip-card-title">Budapest, Hungary</h5>
+                        <p>Known for its thermal baths and stunning architecture, Budapest offers an affordable European getaway with plenty of free and low-cost attractions.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- recent posts -->
+<section id="recent-posts" class="recent-posts-section">
+    <h1 style="font-size: 40px;   font-family: Playfair Display">Recent Posts</h1>
+    <br><br>
+    <div class="posts-container">
+      <article class="post-card">
+        <img src="https://cdn.pixabay.com/photo/2023/02/01/16/04/fog-7760708_1280.jpg" alt="Post Image 1">
+        <div class="post-content">
+          <h3>Exploring the Mountains</h3>
+          <p>A journey through the breathtaking mountains. Discover hidden gems and thrilling hiking trails...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <img src="https://cdn.pixabay.com/photo/2020/05/16/10/14/ocean-5176878_1280.jpg" alt="Post Image 2">
+        <div class="post-content">
+          <h3>Beach Paradise Getaway</h3>
+          <p>Experience the serenity of the ocean with a perfect beach vacation...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+      <article class="post-card">
+        <img src="https://cdn.pixabay.com/photo/2017/04/27/07/26/rock-climbing-2264698_1280.jpg" alt="Post Image 3">
+        <div class="post-content">
+          <h3>City Escapes for Adventurers</h3>
+          <p>Explore the vibrant energy of major cities and the unique experiences they offer...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+<br><br>  
+
+<!-- contact -->
+<div class="contact-container">
+    <div class="contact-info">
+        <div class="contact-info-item">
+            <span class="icon">📞</span>
+            <span class="text">+1 (123) 456-7890</span>
+        </div>
+        <div class="contact-info-item">
+            <span class="icon">📧</span>
+            <span class="text">contact@example.com</span>
+        </div>
+        <div class="contact-info-item">
+            <span class="icon">📍</span>
+            <span class="text">123 Main Street, Anytown, USA</span>
+        </div>
+    </div>
+
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          
+
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+<br>
+<footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Travel Blog</h3>
+        <p>Exploring the world, one destination at a time. Join us on our adventures and discover new travel stories, tips, and guides.</p>
+      </div>
+  
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Travel Blog. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>  
+</html>

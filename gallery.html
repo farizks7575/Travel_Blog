@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+/* General styles for the gallery */
+.gallery {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 15px; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden; 
+    border-radius: 8px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.gallery-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    aspect-ratio: 1 / 1; 
+    transition: transform 0.3s ease; 
+}
+
+
+.gallery-item:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); 
+}
+/*  */
+.scr {
+    display: flex;
+    justify-content: center; /* Centers the .row horizontally within .scr */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Ensures space between content and image */
+    align-items: center; /* Aligns items vertically in the center */
+    width: 100%; /* Full width for the row */
+    max-width: 1200px; /* Limits the width of the row */
+}
+
+.content {
+    flex: 1; /* Allows the content to take up available space */
+    padding-right: 20px; /* Space between content and image */
+}
+.content p {
+    font-size: 18px; /* Sets the font size for <p> elements within .content */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.image {
+    flex: 1; /* Allows the image to take up available space */
+    text-align: right; /* Aligns the image to the right side */
+}
+
+.image img {
+    width: 950px; /* Fixed width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    max-height: 500px; /* Optional: Set a maximum height for larger images */
+    object-fit: cover; /* Ensures the image covers the area properly */
+}
+
+
+    </style>
+</head>
+<body style="background-color: #ffffff;">
+    <!-- Navigation Bar -->
+    <div class="menu-bar">
+        <h1 class="logo">Travel<span>Blog</span></h1>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./blog.html">Blog</a>
+          </li>
+          <li><a href="#">Destination <i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Japan</a></li>
+                    <li><a href="#">USA</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">France</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="#">Travel <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Travel Tips</a></li>
+                  <li><a href="#">Budget Travel</a></li>
+                </ul>
+              </div>
+        </li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <br><br><br><br><br>
+<!-- Gallery Section 1 -->
+<!-- Gallery Section 1 -->
+ <h1 style="font-size: 50px;   font-family: Playfair Display">GALLERY</h1><br><br>
+<section class="gallery">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2010/12/13/10/21/bridge-2715_1280.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/14/57/eiffel-tower-1853365_1280.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2021/10/02/04/12/bridge-6674136_1280.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2015/08/28/08/06/petronas-911580_1280.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2014/11/15/23/29/fairytale-532850_1280.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2016/11/18/14/06/trevi-fountain-1834787_1280.jpg" alt="Image 5">
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section 2 -->
+<section class="gallery">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2020/07/23/21/34/arc-de-triomphe-5432392_1280.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2020/01/26/13/54/prague-4794636_1280.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2017/08/07/19/53/rome-2607185_1280.jpg" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2020/02/15/15/53/great-wall-of-china-4851293_1280.jpg" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2013/09/30/05/33/louvre-188506_1280.jpg" alt="Image 10">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2021/08/15/07/35/ferris-wheel-6547089_1280.jpg" alt="Image 15">
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section 3 -->
+<section class="gallery">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2015/01/28/23/10/mosque-615415_1280.jpg" alt="Image 11">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2013/11/21/14/18/magic-castle-215072_1280.jpg" alt="Image 12">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2018/12/18/10/56/india-3882117_1280.jpg" alt="Image 13">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2022/03/08/06/00/ancient-town-7055051_1280.jpg" alt="Image 14">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2020/11/19/15/32/sculpture-5758884_1280.jpg" alt="Image 15">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2019/06/13/17/37/mountains-4272112_1280.jpg" alt="Image 15">
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="scr">
+    <div class="row">
+        <div class="content">
+            <h2><b>MY GEAR</b></h2>
+            <p>
+                This is some of the camera gear I use for taking pictures during our travels. You con find out more in the links!
+            </p>
+        </div>
+        <div class="image">
+            <img src="./img_scr.png" alt="Gear Image">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Travel Blog</h3>
+        <p>Exploring the world, one destination at a time. Join us on our adventures and discover new travel stories, tips, and guides.</p>
+      </div>
+  
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Travel Blog. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>  
